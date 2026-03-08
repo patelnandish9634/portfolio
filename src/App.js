@@ -181,13 +181,13 @@ Developed an Online Exam Group Generator system to automatically assign students
 
   // Certificate data
   const certificates = [
-    // {
-    //   name: "Interactivity with JavaScript",
-    //   issuer: "University of Michigan",
-    //   grade: "90%",
-    //   year: "2025",
-    //   link: "https://www.coursera.org/account/accomplishments/certificate/2U49EYM7FMVJ"
-    // },
+    {
+      name: "Interactivity with JavaScript",
+      issuer: "University of Michigan",
+      grade: "90%",
+      year: "2025",
+      link: "https://www.coursera.org/account/accomplishments/certificate/2U49EYM7FMVJ"
+    },
     {
       name: "Data Visualization and Communication with Tableau",
       issuer: "Duke University",
@@ -343,20 +343,8 @@ Developed an Online Exam Group Generator system to automatically assign students
 
         {/* Mobile Menu */}
         <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-          <button 
-            className="mobile-nav-link" 
-            onClick={(e) => handleNavClick(e, 'about')}
-            style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}
-          >
-            About
-          </button>
-          <button 
-            className="mobile-nav-link" 
-            onClick={(e) => handleNavClick(e, 'projects')}
-            style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}
-          >
-            Projects
-          </button>
+          <a href="#about" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+          <a href="#projects" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
           
           {/* Mobile Degree Dropdown */}
           <div className="mobile-nav-link" style={{ padding: 0 }}>
@@ -411,27 +399,9 @@ Developed an Online Exam Group Generator system to automatically assign students
             </AnimatePresence>
           </div>
           
-          <button 
-            className="mobile-nav-link" 
-            onClick={(e) => handleNavClick(e, 'certificates')}
-            style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}
-          >
-            Certificates
-          </button>
-          <button 
-            className="mobile-nav-link" 
-            onClick={(e) => handleNavClick(e, 'contact')}
-            style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}
-          >
-            Contact
-          </button>
-          <button 
-            className="mobile-nav-link" 
-            onClick={handleResumeDownload}
-            style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}
-          >
-            Download Resume
-          </button>
+          <a href="#certificates" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'certificates')}>Certificates</a>
+          <a href="#contact" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
+          <button className="mobile-nav-link" onClick={handleResumeDownload} style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}>Download Resume</button>
         </div>
       </nav>
 
@@ -461,20 +431,8 @@ Developed an Online Exam Group Generator system to automatically assign students
           </motion.p>
 
           <motion.div className="hero-buttons" variants={itemVariant}>
-            <button 
-              className="btn-primary" 
-              onClick={(e) => handleNavClick(e, 'projects')}
-              style={{ border: 'none', cursor: 'pointer' }}
-            >
-              View Projects
-            </button>
-            <button 
-              className="btn-secondary" 
-              onClick={handleResumeDownload}
-              style={{ border: '1.5px solid #334155', background: 'transparent', cursor: 'pointer' }}
-            >
-              Download Resume
-            </button>
+            <a href="#projects" className="btn-primary" onClick={(e) => handleNavClick(e, 'projects')}>View Projects</a>
+            <button className="btn-secondary" onClick={handleResumeDownload} style={{ border: '1.5px solid #334155', background: 'transparent' }}>Download Resume</button>
           </motion.div>
         </motion.div>
 
@@ -774,14 +732,14 @@ Developed an Online Exam Group Generator system to automatically assign students
               desc: "Built a MERN-based application that dynamically assigns students into exam groups using backend logic and database handling. Integrated Excel export functionality to download structured group data.",
               tags: ["React", "Node.js", "MongoDB", "Express"],
               image: project2,
-              link: "https://github.com/patelnandish9634"
+              link: "https://github.com/patelnandish9634" // Updated with valid href
             },
             {
               title: "Student E-Learning Platform",
               desc: "Built a full-stack academic platform featuring role-based access control with faculty subject creation, admin verification and approval workflow, and controlled student access to approved subjects. Implemented structured database design and scalable REST APIs using the MERN stack.",
               tags: ["React", "Node.js", "MongoDB", "Express"],
               image: project3,
-              link: "https://github.com/patelnandish9634"
+              link: "https://github.com/patelnandish9634" // Updated with valid href
             }
           ].map((project, index) => (
             <motion.div
@@ -1106,30 +1064,10 @@ Developed an Online Exam Group Generator system to automatically assign students
 
           {/* Footer Links */}
           <div className="footer-links">
-            <button 
-              onClick={(e) => handleNavClick(e, 'about')}
-              style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', fontSize: '0.95rem' }}
-            >
-              About
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'projects')}
-              style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', fontSize: '0.95rem' }}
-            >
-              Projects
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'certificates')}
-              style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', fontSize: '0.95rem' }}
-            >
-              Certificates
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'contact')}
-              style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', fontSize: '0.95rem' }}
-            >
-              Contact
-            </button>
+            <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+            <a href="#certificates" onClick={(e) => handleNavClick(e, 'certificates')}>Certificates</a>
+            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
           </div>
 
           {/* Copyright */}
