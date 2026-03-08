@@ -181,13 +181,13 @@ Developed an Online Exam Group Generator system to automatically assign students
 
   // Certificate data
   const certificates = [
-    {
-      name: "Interactivity with JavaScript",
-      issuer: "University of Michigan",
-      grade: "90%",
-      year: "2025",
-      link: "https://www.coursera.org/account/accomplishments/certificate/2U49EYM7FMVJ"
-    },
+    // {
+    //   name: "Interactivity with JavaScript",
+    //   issuer: "University of Michigan",
+    //   grade: "90%",
+    //   year: "2025",
+    //   link: "https://www.coursera.org/account/accomplishments/certificate/2U49EYM7FMVJ"
+    // },
     {
       name: "Data Visualization and Communication with Tableau",
       issuer: "Duke University",
