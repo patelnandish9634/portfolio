@@ -312,14 +312,14 @@ Developed an Online Exam Group Generator system to automatically assign students
                       <div className="dropdown-divider"></div>
                       
                       {/* Master of Computer Application */}
-                      <a href="#mca" className="dropdown-item" onClick={(e) => e.preventDefault()}>
+                      <div className="dropdown-item" style={{ cursor: 'default' }}>
                         <span className="degree-icon">🎓</span>
                         <div className="degree-info">
                           <span className="degree-title">Master of Computer Application</span>
                           <span className="degree-desc">MCA • 2024-2026</span>
                           <span className="degree-status">Pursuing • Current CGPA: 8.8</span>
                         </div>
-                      </a>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -386,14 +386,14 @@ Developed an Online Exam Group Generator system to automatically assign students
                     </div>
                   </a>
                   <div className="dropdown-divider"></div>
-                  <a href="#mca" className="dropdown-item" onClick={(e) => e.preventDefault()}>
+                  <div className="dropdown-item" style={{ cursor: 'default' }}>
                     <span className="degree-icon">🎓</span>
                     <div className="degree-info">
                       <span className="degree-title">Master of Computer Application</span>
                       <span className="degree-desc">MCA • 2024-2026</span>
                       <span className="degree-status">Pursuing • Current CGPA: 8.8</span>
                     </div>
-                  </a>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -401,7 +401,7 @@ Developed an Online Exam Group Generator system to automatically assign students
           
           <a href="#certificates" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'certificates')}>Certificates</a>
           <a href="#contact" className="mobile-nav-link" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
-          <a href="#" className="mobile-nav-link" onClick={handleResumeDownload}>Download Resume</a>
+          <button className="mobile-nav-link" onClick={handleResumeDownload} style={{ width: '100%', textAlign: 'left', border: 'none', cursor: 'pointer' }}>Download Resume</button>
         </div>
       </nav>
 
@@ -432,7 +432,7 @@ Developed an Online Exam Group Generator system to automatically assign students
 
           <motion.div className="hero-buttons" variants={itemVariant}>
             <a href="#projects" className="btn-primary" onClick={(e) => handleNavClick(e, 'projects')}>View Projects</a>
-            <a href="#" className="btn-secondary" onClick={handleResumeDownload}>Download Resume</a>
+            <button className="btn-secondary" onClick={handleResumeDownload} style={{ border: '1.5px solid #334155', background: 'transparent' }}>Download Resume</button>
           </motion.div>
         </motion.div>
 
@@ -732,14 +732,14 @@ Developed an Online Exam Group Generator system to automatically assign students
               desc: "Built a MERN-based application that dynamically assigns students into exam groups using backend logic and database handling. Integrated Excel export functionality to download structured group data.",
               tags: ["React", "Node.js", "MongoDB", "Express"],
               image: project2,
-              link: "#"
+              link: "https://github.com/patelnandish9634" // Updated with valid href
             },
             {
               title: "Student E-Learning Platform",
               desc: "Built a full-stack academic platform featuring role-based access control with faculty subject creation, admin verification and approval workflow, and controlled student access to approved subjects. Implemented structured database design and scalable REST APIs using the MERN stack.",
               tags: ["React", "Node.js", "MongoDB", "Express"],
               image: project3,
-              link: "#"
+              link: "https://github.com/patelnandish9634" // Updated with valid href
             }
           ].map((project, index) => (
             <motion.div
