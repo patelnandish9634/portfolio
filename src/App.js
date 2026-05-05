@@ -732,7 +732,7 @@ Developed an Online Exam Group Generator system to automatically assign students
               desc: "Built a MERN-based application that dynamically assigns students into exam groups using backend logic and database handling. Integrated Excel export functionality to download structured group data.",
               tags: ["React", "Node.js", "MongoDB", "Express"],
               image: project2,
-              link: "https://github.com/patelnandish9634" // Updated with valid href
+              link: "https://github.com/patelnandish9634/exam-group-generator" // Updated with valid href
             },
             {
               title: "Student E-Learning Platform",
